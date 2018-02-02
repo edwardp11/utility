@@ -16,8 +16,29 @@ public class file {
 		for(String name:filelist){
 			System.out.println(name);
 	}
+	}
+		public void pathExist(){
+			System.out.println("Enter path: ");
+			Scanner sc = new Scanner (System.in);
+			
+			if (folder.exists()){
+				System.out.println("Exists");
+				if (folder.canWrite())
+					System.out.println("Can write");
+					else
+					System.out.println("Can not write");
+				if (folder.canRead())
+					System.out.println("Can read");
+				else 
+					System.out.println("Can not read");
+				}
+			
+			else
+				System.out.println("Does not exist");
+			
+		}
 
 	
 }
 
-}
+

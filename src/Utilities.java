@@ -34,6 +34,7 @@ public class Utilities {
 		System.out.println("14-Floyd Triangle");
 		System.out.println("15-Find file contents");
 		System.out.println("16-Password confirmation");
+		System.out.println("17-File read/write");
 		System.out.println("9- Exit");
 		System.out.println("Enter: ");
 		choice=scan.nextInt();
@@ -89,6 +90,10 @@ public class Utilities {
         case 16:
         	password pass = new password();
 			pass.enterPassword();
+			break;
+        case 17:
+        	file files2 = new file();
+			files2.pathExist();
 			break;
 		default: 
 				System.out.println("Fail");
