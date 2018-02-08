@@ -35,6 +35,7 @@ public class Utilities {
 		System.out.println("15-Find file contents");
 		System.out.println("16-Password confirmation");
 		System.out.println("17-File read/write");
+		System.out.println("18-Add integers in array");
 		System.out.println("9- Exit");
 		System.out.println("Enter: ");
 		choice=scan.nextInt();
@@ -95,6 +96,11 @@ public class Utilities {
         	file files2 = new file();
 			files2.pathExist();
 			break;
+        case 18:
+        	addArrayContents array1=new addArrayContents();
+        	array1.fillArray();
+        	System.out.println(array1.arrayAddition());
+        	break;
 		default: 
 				System.out.println("Fail");
 				
