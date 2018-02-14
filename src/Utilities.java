@@ -35,7 +35,8 @@ public class Utilities {
 		System.out.println("15-Find file contents");
 		System.out.println("16-Password confirmation");
 		System.out.println("17-File read/write");
-		System.out.println("18-Add integers in array");
+		System.out.println("18- Addition with chart");
+		System.out.println("19- Standard Deviation");
 		System.out.println("9- Exit");
 		System.out.println("Enter: ");
 		choice=scan.nextInt();
@@ -99,8 +100,18 @@ public class Utilities {
         case 18:
         	addArrayContents array1=new addArrayContents();
         	array1.fillArray();
+        	
         	System.out.println(array1.arrayAddition());
+        	array1.displayArray();
         	break;
+        case 19:
+        	standardDeviation array2=new standardDeviation();
+        	array2.fillArray();
+        	System.out.println("The standard deviation is: " + array2.sDeviation());
+        	
+        	
+        	break;
+       	
 		default: 
 				System.out.println("Fail");
 				
