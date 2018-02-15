@@ -16,6 +16,7 @@ public class Utilities {
 		speedCalc speedT = new speedCalc();
 		bmi bodyMass = new bmi();
 		floydTri triangle=new floydTri();
+		phoneList pList=new phoneList();
 		
 		
 		while (choice!= 9){
@@ -37,6 +38,7 @@ public class Utilities {
 		System.out.println("17-File read/write");
 		System.out.println("18- Addition with chart");
 		System.out.println("19- Standard Deviation");
+		System.out.println("20- Phone Book");
 		System.out.println("9- Exit");
 		System.out.println("Enter: ");
 		choice=scan.nextInt();
@@ -108,8 +110,28 @@ public class Utilities {
         	standardDeviation array2=new standardDeviation();
         	array2.fillArray();
         	System.out.println("The standard deviation is: " + array2.sDeviation());
+        	break;
+        case 20:
+        	Scanner ch = new Scanner(System.in);
         	
+        	String entry = "y";
+        	System.out.println("Do you want to a phone number(y/n)");
+       	    entry = ch.nextLine();
         	
+        	while (entry.equals("y"))
+        			
+        	{
+        		
+        		
+        		pList.addNumber();
+        		System.out.println("Do you want to enter a phone number(y/n)");
+           	 entry = ch.nextLine();
+        		
+        		
+        	}
+        	System.out.println("Current Phonebook: ");
+        	pList.outPut();
+    		      	
         	break;
        	
 		default: 
